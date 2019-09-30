@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a2f42"
+    android:id="@+id/linearLayout"
     android:orientation="vertical"
     tools:context=".Login">
     <ScrollView
@@ -145,12 +146,13 @@
                 android:textColorHint="#565F7E"
                 android:drawableLeft="@drawable/ic_lock"
                 android:textColor="#D4DFE2"
+                android:inputType="textPassword"
                 android:padding="15dp"
                 android:id="@+id/edt_password" />
 
             <Button
                 android:layout_width="150dp"
-                android:id="@+id/btnValidAuth"
+                android:id="@+id/btnAuth"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@drawable/border_button"

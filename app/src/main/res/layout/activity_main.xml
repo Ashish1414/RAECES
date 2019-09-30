@@ -8,21 +8,14 @@
     android:background="#3dbda6"
     tools:context=".MainActivity">
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="100dp"
         android:src="@drawable/rlogo"
         app:civ_border_color="#FFFFFF"
         app:civ_border_width="0dp" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        />
 
 </LinearLayout>
