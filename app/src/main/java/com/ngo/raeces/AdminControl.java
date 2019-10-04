@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class AdminControl extends AppCompatActivity {
-    Button btnLogout;
+    Button btnLogout,add_student;
     SharedPreferences sharedPreferences;
 
     @Override
@@ -18,7 +18,7 @@ public class AdminControl extends AppCompatActivity {
         setContentView(R.layout.activity_admin_control);
 
         btnLogout = findViewById(R.id.btnLogout);
-
+        add_student=findViewById(R.id.add_student);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +27,15 @@ public class AdminControl extends AppCompatActivity {
                 editor.clear();
                 editor.commit();
                 Intent intent = new Intent(AdminControl.this,Login.class);
+                startActivityForResult(intent, 0);
+                overridePendingTransition(0, 0);
+                finish();
+            }
+        });
+        add_student.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminControl.this,Add_Student.class);
                 startActivityForResult(intent, 0);
                 overridePendingTransition(0, 0);
                 finish();
