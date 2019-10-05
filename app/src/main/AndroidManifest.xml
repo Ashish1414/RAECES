@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".Add_Student"></activity>
-        <activity android:name=".StudentDashboard" />
+        <activity android:name=".StudentDashboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".AdminControl" />
         <activity
             android:name=".Login"
