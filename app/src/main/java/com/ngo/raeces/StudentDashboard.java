@@ -41,13 +41,12 @@ public class StudentDashboard extends AppCompatActivity implements NavigationVie
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-        btnLogout = findViewById(R.id.btnLogout);
         View ab = navigationView.getHeaderView(0);
         Menu show = navigationView.getMenu();
         name = (TextView) ab.findViewById(R.id.name_user);
         logout = ab.findViewById(R.id.logout);
 
-        btnLogout.setOnClickListener(new View.OnClickListener() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sharedPreferences = getSharedPreferences("Login",0);
@@ -60,6 +59,17 @@ public class StudentDashboard extends AppCompatActivity implements NavigationVie
                 finish();
             }
         });
+
+        findViewById(R.id.aboutStudent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StudentDashboard.this,AboutStudent.class);
+                startActivityForResult(intent,0);
+                overridePendingTransition(0,0);
+            }
+        });
+
+
     }
 
     @Override
