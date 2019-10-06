@@ -212,6 +212,7 @@ public class Login extends AppCompatActivity {
                         String Stndid = student.getString("Stndid");
                         String name = student.getString("name");
                         String Class = student.getString("class");
+                        String phone = student.getString("phone");
                         String course = student.getString("course");
                         String interest = student.getString("interest");
                         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -220,8 +221,10 @@ public class Login extends AppCompatActivity {
                         editor.putString("StudentID",Stndid);
                         editor.putString("name",name);
                         editor.putString("Class",Class);
+                        editor.putString("phone",phone);
                         editor.putString("course",course);
                         editor.putString("interest",interest);
+                        editor.putString("email",edtMail.getText().toString());
                         editor.commit();
                         Intent intent = new Intent(Login.this,StudentDashboard.class);
                         startActivityForResult(intent, 0);
