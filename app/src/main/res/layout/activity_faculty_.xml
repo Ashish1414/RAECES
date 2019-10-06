@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Faculty_Activity">
+
+    <Button
+        android:id="@+id/add_faculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/colour_button"
+        android:elevation="20dp"
+        android:layout_marginTop="150dp"
+        android:text="Add Faculty"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/remove_faculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/colour_button"
+        android:text="Remove Faculty"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/notice_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colour_button"
+        android:text="Notice to Paticular Faculty"
+        android:textColor="#FFFFFF"
+
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/faculty_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colour_button"
+        android:text="Faculty Profiles"
+        android:textColor="#FFFFFF"
+
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colour_button"
+        android:text="salary"
+
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

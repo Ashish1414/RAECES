@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Study_material_admin">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Study Material"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
+    <Button
+        android:id="@+id/available_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/colour_button"
+        android:elevation="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Available Study Materials"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/demand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/colour_button"
+        android:text="Courses in Demand"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/add_study_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colour_button"
+        android:text="Add Study Materials"
+        android:textColor="#FFFFFF"
+
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/remove_study_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colour_button"
+        android:text="Remove any Couses?"
+        android:textColor="#FFFFFF"
+
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colour_button"
+        android:text="Suggestion from student"
+
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
